@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">ARRITMIAS</h1>
+    <p class="lead">{{contactos}}</p>
+    <hr class="my-4">
+    <p>Es un trastorno de la frecuencia cardíaca (pulso) o del ritmo cardíaco. El corazón puede latir demasiado rápido (taquicardia), 
+        demasiado lento (bradicardia) o de manera irregular.
+        Una arritmia puede no causar daño, ser una señal de otros problemas cardíacos o un peligro inmediato para su salud..</p>
+    <a class="btn btn-primary btn-lg" href="{{url_for('imagenes')}}" role="button">Ver Imagenes de la señal.</a>
+    
+  </div>
+ 
+{% endblock %}
