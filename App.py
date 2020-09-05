@@ -33,9 +33,13 @@ def imagenes():
 def informacion():
     return render_template('informacion.html')
 
+@app.route('/corazon')
+def corazon():
+    return render_template('corazon.html')
+
    
 rate = 360
-archivo= scipy.io.loadmat('118m.mat')
+archivo= scipy.io.loadmat('D:/Datos Importantes/UCE/UCE/9.- Noveno/Optativa 3/Proyecto/chalacan-Optativa01/src/118m.mat')
 arreglo_val= archivo['val']
 m=np.array(arreglo_val[0])
 
